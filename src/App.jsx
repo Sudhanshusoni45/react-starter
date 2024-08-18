@@ -1,6 +1,8 @@
 import "./App.css"
-import { Routes } from "react-router"
+import { Route, Routes } from "react-router"
 import { Toaster } from "react-hot-toast"
+import { Suspense } from "react"
+import { Loader } from "./components/Loader/loader"
 
 function App() {
   return (
@@ -13,7 +15,14 @@ function App() {
         }
       >
         <Routes>
-          <Route path="/" element={<div>React App</div>} />
+          <Route
+            path="/"
+            element={
+              <div className="">
+                <span>React App</span>
+              </div>
+            }
+          />
         </Routes>
         <Toaster />
       </Suspense>
