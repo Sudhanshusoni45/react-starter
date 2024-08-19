@@ -9,16 +9,48 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\"",
+      "pre-merge-commit": "echo \"[Husky] pre-merge-commit\"",
+      "prepare-commit-msg": "echo \"[Husky] prepare-commit-msg\"",
+      "commit-msg": "echo \"[Husky] commit-msg\"",
+      "post-commit": "echo \"[Husky] post-commit\"",
+      "pre-rebase": "echo \"[Husky] pre-rebase\"",
+      "post-checkout": "echo \"[Husky] post-checkout\"",
+      "post-merge": "echo \"[Husky] post-merge\"",
+      "pre-push": "echo \"[Husky] pre-push\"",
+      "pre-receive": "echo \"[Husky] pre-receive\"",
+      "update": "echo \"[Husky] update\"",
+      "post-receive": "echo \"[Husky] post-receive\"",
+      "post-update": "echo \"[Husky] post-update\"",
+      "reference-transaction": "echo \"[Husky] reference-transaction\"",
+      "push-to-checkout": "echo \"[Husky] push-to-checkout\"",
+      "pre-auto-gc": "echo \"[Husky] pre-auto-gc\"",
+      "post-rewrite": "echo \"[Husky] post-rewrite\"",
+      "sendemail-validate": "echo \"[Husky] sendemail-validate\"",
+      "fsmonitor-watchman": "echo \"[Husky] fsmonitor-watchman\"",
+      "p4-changelist": "echo \"[Husky] p4-changelist\"",
+      "p4-prepare-changelist": "echo \"[Husky] p4-prepare-changelist\"",
+      "p4-post-changelist": "echo \"[Husky] p4-post-changelist\"",
+      "p4-pre-submit": "echo \"[Husky] p4-pre-submit\"",
+      "post-index-change": "echo \"[Husky] post-index-change\""
+    }
+  },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
     "axios": "^1.7.4",
+    "husky": "^9.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
     "react-redux": "^7.2.2",
-    "react-router-dom": "^6.2.2",
     "react-router": "^6.2.2",
-    "vite-tsconfig-paths": "^4.3.1",
-    "@reduxjs/toolkit": "^2.2.1"
+    "react-router-dom": "^6.2.2",
+    "vite-tsconfig-paths": "^4.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
