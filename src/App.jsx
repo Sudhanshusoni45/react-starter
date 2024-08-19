@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router"
 import { Toaster } from "react-hot-toast"
 import { Suspense } from "react"
 import { Loader } from "./components/Loader/loader"
-
+//husky
 function App() {
   return (
     <>
